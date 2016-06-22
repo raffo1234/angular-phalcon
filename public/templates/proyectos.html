@@ -1,0 +1,29 @@
+<div class="proyectos_in proyectos_js align_left">
+    
+    <div id="pro_{{$index}}" class="proyecto proyecto_js display-inline align_center" ng-repeat="proyecto in proyectos">
+        <figure class="img" style="background: url('{{proyecto.image}}') 50% no-repeat; background-size: cover;">
+            <a href="proyectos/{{ proyecto.slug}}" class="proyecto_inner">
+                <img ng-src="{{proyecto.image}}" alt="{{proyecto.title}}" />
+                <div class="cover">
+                    <div class="in height_100">
+                        <div class="lft border"><div class="helper"></div><div class="border_in display-inline"></div></div>
+                        <div class="rgt border"><div class="helper"></div><div class="border_in display-inline"></div></div>
+                        <div class="top border align_center"><div class="border_in display-inline"></div></div>
+                        <div class="bot border align_center"><div class="border_in display-inline"></div></div>
+                        <div class="helper"></div><!--
+                        --><div class="display-inline ">
+                            <!--<h2>{{proyecto.id}}</h2>-->
+                            <!--<h3>{{proyecto.slug}}</h3>-->
+                            <!--<p>{{proyecto.title}}</p>-->
+                            <div class="btn_big display-inline">
+                                VER PROYECTO
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </a>
+        </figure>
+    </div><!--
+    --></div>

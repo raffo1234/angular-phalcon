@@ -1,0 +1,42 @@
+<div class="proyecto_detalle proyecto_in proyecto_detalle_js align_left">
+    <div class="navigation">
+        <a href="javascript:void(0);" class="nav prev">prev</a>
+        <a href="/proyectos" class="nav all">proyectos</a>
+        <a href="javascript:void(0);" class="nav next">next</a>
+    </div>
+    <div class="align_center proyecto_detalle_in" ng-repeat="proyecto in proyectos" style="background-color: {{proyecto.color}}">
+        <div class="proyecto_data">
+            <h2>PROYECTO</h2>
+            <h1>{{proyecto.title}}</h1>
+
+        </div>
+        <div class="descripcion">
+            <div class="descripcion_lft align_left display-inline vertical_top">
+                <p>Hathaway contrajo matrimonio con Shakespeare en noviembre de 1582, embarazada de tres meses. Por aquel entonces contaba 26 años, mientras que Shakespeare tenía tan solo 18. Esta diferencia de edad y su embarazo han hecho pensar a muchos historiadores que su boda fue forzada por parte de la familia de la novia, a pesar de que no existen pruebas que lo confirmen. Anne tuvo tres hijos: Susanna en 1583, y los gemelos Hamnet y Judith en 1585.<p>
+                <p>Está muy extendida la creencia de que el suyo fue un matrimonio poco cálido. Durante la mayor parte de su vida de casados el poeta vivió en Londres escribiendo e interpretando sus obras, mientras que Anne Hathaway permanecía en Stratford. Además, en su testamento, Shakespeare le destinó a Anne sólo su "segunda mejor cama". Falleció el 6 de agosto de 1623, probablemente a la edad de 66 ó 67 años.</p>
+                <p>Sin embargo, cuando el dramaturgo se retiró del teatro en 1613, optó por volver a Stratford, en vez de seguir en la capital. En lo que concierne a su testamento, se han dado algunas explicaciones distintas al mero rechazo de Shakespeare. Primero, conforme a la ley, la mujer tenía derecho a recibir un tercio del patrimonio de su marido sin importar lo que aquel pensara.1 Segundo, se ha especulado que Hathaway sería respaldada por sus hijos. Los archivos nacionales sostienen que "las camas y otras piezas del mobiliario de la casa eran a menudo la única pensión que se destinaba a una esposa," y que, tradicionalmente, los hijos recibirían los mejores artículos, dejando para la viuda aquellos de segunda mano.2 Finalmente, en la costumbre isabelina, la mejor cama de la casa era reservada para los invitados. Por lo tanto, la cama que Shakespeare le dejó a Hathaway pudo haber sido su lecho matrimonial, un detalle significativo</p>
+            </div><!--
+            --><div class="descripcion_rgt display-inline vertical_top">
+                <ul>
+                    <li>
+                        <span>  Cliente:</span>
+                        Raeru SAC
+                    </li>
+                    <li>
+                        <span>  Proyecto:</span>
+                        Raeru SAC
+                    </li>
+                    <li>
+                        <span>  Link:</span>
+                        <a href="{{proyecto.url}}" target="_blank">{{proyecto.title}}</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <figure class="img proyecto_image_large">
+            <img ng-src="{{proyecto.image}}" alt="{{proyecto.title}}" />
+        </figure>
+
+    </div><!--
+    --></div>
